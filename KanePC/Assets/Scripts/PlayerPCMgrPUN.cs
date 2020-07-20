@@ -3,7 +3,6 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Voice.Unity;
 using Photon.Voice.PUN;
-using UnityEditor;
 
 namespace KanePC
 {
@@ -58,6 +57,10 @@ namespace KanePC
         // Oculus Elements
         [Header("Local Player's Oculus VR (MUST set to INACTIVE in prefab):")]
         public GameObject CameraRig;
+
+        //// Tool Elements
+        //[Header("Player Tools:")]
+        //public ToolSpawner toolSpawner;
 
         // Voice Elements
         private int _CurrentAvailableLocalGroupNumber;

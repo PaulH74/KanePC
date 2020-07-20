@@ -185,11 +185,8 @@ GameObject:
   - component: {fileID: 7472900362760774431}
   - component: {fileID: 1004779978658341303}
   - component: {fileID: 7006380664325257585}
-  - component: {fileID: 987816033591474743}
   - component: {fileID: 3239479435917355439}
-  - component: {fileID: 2085284833995449412}
-  - component: {fileID: 256114476325632566}
-  - component: {fileID: 1873475960888502384}
+  - component: {fileID: 1233857429968642311}
   m_Layer: 0
   m_Name: Laser Pointer
   m_TagString: Untagged
@@ -289,21 +286,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &987816033591474743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9190093418421573571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e5dae61d83d8554bac02f95bd37928d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.5
-  frequency: 0.5
-  duration: 0.2
 --- !u!114 &3239479435917355439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,11 +304,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 256114476325632566}
+  - {fileID: 0}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &2085284833995449412
+--- !u!114 &1233857429968642311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -335,41 +317,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9190093418421573571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9320faf1bce9b3a4e8133796477e6091, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &256114476325632566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9190093418421573571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342d337dae177334ea5ee836dc2a6724, type: 3}
+  m_Script: {fileID: 11500000, guid: d6174fa9f05d90d45a6196a0f1b0a44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserBeam: {fileID: 5279836450895633757}
   laserHitPoint: {fileID: 2025690775498039135}
-  floorHitPoint: {fileID: 2100000, guid: 842cbdca9045c8e47883887eaab0e6d7, type: 2}
+  teleportHitPoint: {fileID: 2025690775498039135}
   validLaserHitLayer:
     serializedVersion: 2
     m_Bits: 2048
---- !u!114 &1873475960888502384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9190093418421573571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd5f8ff58a35d94d9e0ccf0f85dac94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
